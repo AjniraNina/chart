@@ -6,7 +6,10 @@ body {
   padding: 0 5vw;
   display: flex;
   flex-direction: column;
-}
+    padding-bottom: 90vh;
+  }
+  
+
 
 
 main {
@@ -15,16 +18,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;}
+  text-align: center;
+}
 
 table{
   box-shadow: 6px 33px 43px -30px rgba(51,51,51,0.32);
 
-}
-caption {
-  text-align: left;
-  font-style: italic;
-  padding: 0.25em 0.5em 0.5em 0.5em;
 }
 
 .expiring-2{
@@ -44,33 +43,6 @@ td {
   background-color: whitesmoke;
 
 }
-
-.Legend-colorBox {
-  width: 1.5rem;
-  height: 0.7rem;
-  display: inline-block;
-}
-
- ul {display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    padding: 14px;}
-
-
-
-li {
-  list-style-type: none;
-  padding: 14px;
-}
-
-
-
-
-
-body {
-  padding-bottom: 90vh;
-}
-
 
 .compliant{
   background-color: rgb(13, 168, 73);
@@ -177,6 +149,26 @@ body {
   background-color: rgb(226, 226, 226);
 
 }
+
+.Legend-colorBox {
+  width: 1.5rem;
+  height: 0.7rem;
+  display: inline-block;
+}
+
+ ul {display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 14px;}
+
+
+
+li {
+  list-style-type: none;
+  padding: 14px;
+}
+
+
 
 /* tooltip styling  css */
 
@@ -286,7 +278,6 @@ body {
 
 
 td{
-  width:600px;
   background-color: whitesmoke;
 }
 
@@ -294,8 +285,14 @@ tr{
   display: flex;
     flex-wrap: nowrap;
     align-content: center;
-    max-width: 800px;
     align-items: flex-end;
+}
+
+@media only screen and (min-width: 800px) {
+
+  tr{
+
+    width:800px;}
 }
 
 .cert-type{
@@ -304,6 +301,6 @@ tr{
   justify-content: flex-start;
   align-items: flex-end;
   background: white;
-  
-  font-size:18px;
+  font-size:1rem;
+  width: 400px;
 }
