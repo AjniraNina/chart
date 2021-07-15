@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>myPass</title>
+  </head>
+  <body>
+      <main>
+
+        <ul class="Legend">
+          <li class="Legend-item">
+            <span class="Legend-colorBox" style="background-color: green;">
+            </span>
+            <span class="Legend-label">
+              Compliant Certificates
+            </span>
+          </li>
+          <li class="Legend-item">
+            <span class="Legend-colorBox" style="background-color: #dbc70e">
+            </span>
+            <span class="Legend-label">
+              Expiring Certificates
+                        </span>
+          </li>
+          <li class="Legend-item">
+            <span class="Legend-colorBox" style="background-color:#e22727;">
+            </span>
+            <span class="Legend-label">
+              Expired Certificates
+                        </span>
+          </li>
+
+        </ul>
+
+        <table id="THEAD">
+                    <!-- <thead>
+                        <tr>
+                            <th>Certificate Info Chart</th>
+                        </tr>
+              </thead> -->
+              <tbody>
+                <tr>
+                            <td class="cert-type">Photo identification</td>
+                            <td class="compliant compliant-82" tooltip="82" onclick="myFunction()"></td>
+                            <td class="expiring expiring-13" tooltip="12" onclick="myFunction()"></td>
+                            <td class="expired expired-5" tooltip="5" onclick="myFunction()"></td>
+                </tr>
+                <tr>
+                            <td class="cert-type">Car driver license (C-Class)</td>
+                            <td class="compliant compliant-80" tooltip="71" onclick="myFunction()"></td>
+                            <td class="expiring expiring-2" tooltip="4" onclick="myFunction()"></td>
+                            <td class="expired expired-18" tooltip="14" onclick="myFunction()"></td>
+                </tr>
+                <tr>
+                            <td class="cert-type">Certificate IV - Mechanical fitter</td>
+                            <td class="compliant compliant-85" tooltip="112" onclick="myFunction()"></td>
+                            <td class="expiring expiring-10" tooltip="15" onclick="myFunction()"></td>
+                            <td class="expired expired-5" tooltip="3" onclick="myFunction()"></td>
+                </tr>
+                <tr>
+                            <td class="cert-type">Certificate III - Welder</td>
+                            <td class="compliant compliant-90" tooltip="38" onclick="myFunction()"></td>
+                            <td class="expiring expiring-2" tooltip="2" onclick="myFunction()"></td>
+                            <td class="expired expired-8" tooltip="6" onclick="myFunction()"></td>
+                </tr>
+               <tr>
+                            <td class="cert-type">Heavy vehicle license (H-Class)</td>
+                            <td class="compliant compliant-72" tooltip="82" onclick="myFunction()"></td>
+                            <td class="expiring expiring-5" tooltip="12" onclick="myFunction()"></td>
+                            <td class="expired expired-13" tooltip="26" onclick="myFunction()"></td>
+              </tr>
+
+            </tbody>
+          </table>
+      </main>
+    <script>
+            function myFunction() {
+                alert("I'm showing you workers with their certs.");
+            }
+    </script>
+
+  </body>
+</html>
